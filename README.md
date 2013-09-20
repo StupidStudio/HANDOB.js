@@ -42,4 +42,4 @@ HANDOB
 });
 ```
 
-There also a full featured example in *examples/bucket.html*.
+There also a full featured example in [examples/bucket.html](https://github.com/StupidStudio/HANDOB.js/blob/master/examples/bucket.html).
