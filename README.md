@@ -21,7 +21,7 @@ HANDOB requies jQuery 1.7 or later.
 
 ## Usage
 
-This example enables to buttons to write text into a div.
+This example enables two buttons to write text into a div.
 
 ```html
 <div data-handob-observer="write-observer"></div>
