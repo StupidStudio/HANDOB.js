@@ -23,7 +23,7 @@ This example enables to buttons to write text into a div.
 ```javascript
 HANDOB
 
-.AddHandler('speak', function(event, elm) {
+.AddHandler('write', function(event, elm) {
     var text = $(elm).attr('data-text');
     $(document).trigger('write-now', [text]);
 })
