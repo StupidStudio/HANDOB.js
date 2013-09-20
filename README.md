@@ -8,7 +8,16 @@ handler which can trigger an event.
 
 ## Installation
 
+If you have [bower](http://bower.io/ "A package manager for the web")
+installed, which you should.
+
     $ bower install HANDOB.js
+
+Or simply download or clone the repository and grab the HANDOB.js file.
+
+## Dependencies
+
+HANDOB requies jQuery 1.7 or later.
 
 ## Usage
 
@@ -33,4 +42,4 @@ HANDOB
 });
 ```
 
-Check out a full example in *examples/bucket.html*.
+There also a full featured example in *examples/bucket.html*.
