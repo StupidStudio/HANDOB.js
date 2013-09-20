@@ -13,9 +13,9 @@ handler which can trigger an event.
 ## Usage
 
 ```html
-    <div data-handob-observer="write"></div>
-    <button data-handob-handler="write" data-text="Hello">Hello</button>
-    <button data-handob-handler="write" data-text="You">You</button>
+<div data-handob-observer="write"></div>
+<button data-handob-handler="write" data-text="Hello">Hello</button>
+<button data-handob-handler="write" data-text="You">You</button>
 ```
 
 ```javascript
