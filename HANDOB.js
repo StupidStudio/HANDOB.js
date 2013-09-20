@@ -203,6 +203,7 @@ HANDOB.AddObserver = function(event_names, observer, fn) {
  * case when you've had it disabled with HANDOB.DisablePrefix
  *
  * @public
+ * @returns {Object} Returns the HANDOB object
  **/
 HANDOB.EnablePrefix = function() {
     attr_prefix_in_use = attr_prefix;
@@ -214,6 +215,7 @@ HANDOB.EnablePrefix = function() {
  * data-handob-observer becomes data-handler and data-observer.
  *
  * @public
+ * @returns {Object} Returns the HANDOB object
  **/
 HANDOB.DisablePrefix = function() {
     attr_prefix_in_use = '';
