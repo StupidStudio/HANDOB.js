@@ -17,7 +17,7 @@ Or simply download or clone the repository and grab the [HANDOB.js](https://gith
 
 ## Dependencies
 
-HANDOB.js requies jQuery 1.7 or later.
+HANDOB.js requires jQuery 1.7 or later.
 
 ## Usage
 
