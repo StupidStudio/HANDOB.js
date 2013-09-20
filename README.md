@@ -12,6 +12,8 @@ handler which can trigger an event.
 
 ## Usage
 
+This example enables to buttons to write text into a div.
+
 ```html
 <div data-handob-observer="write"></div>
 <button data-handob-handler="write" data-text="Hello">Hello</button>
