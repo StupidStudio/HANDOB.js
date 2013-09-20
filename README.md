@@ -13,7 +13,7 @@ installed, which you should.
 
     $ bower install HANDOB.js
 
-Or simply download or clone the repository and grab the HANDOB.js file.
+Or simply download or clone the repository and grab the [HANDOB.js](https://github.com/StupidStudio/HANDOB.js/blob/master/HANDOB.js) file.
 
 ## Dependencies
 
