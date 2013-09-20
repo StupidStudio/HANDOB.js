@@ -1,0 +1,10 @@
+{
+  "name": "HANDOB.js",
+  "version": "1.0.0",
+  "description": "Idiomatic handler-observer pattern library for web frontends",
+  "dependencies": {
+    "jquery": "1.7"
+  },
+  "main": "HANDOB.js",
+  "license": "MIT"
+}

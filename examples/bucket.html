@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Bucket example | HANDOB.js</title>
+
+        <style>
+            #bucket {
+                background-color: #d1d1d1;
+            }
+
+            li {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Bucket example</h1>
+
+        <p>Use the buttons to add stuff to the bucket.</p>
+        <p>Click on an item in the bucket to remove it.</p>
+
+        <hr>
+
+        <button data-handler="add-item" data-item="Orange">Add Orange</button>
+        <button data-handler="add-item" data-item="Apple">Add Apple</button>
+        <button data-handler="add-item" data-item="Lemon">Add Lemon</button>
+
+        <div id="bucket" data-observer="bucket">
+            <ul></ul>
+        </div>
+
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="../HANDOB.js"></script>
+        <script>
+            var bucket = [];
+
+            HANDOB
+
+            .DisablePrefix()
+
+            .AddHandler('add-item', function(event, elm) {
+                var item = $(elm).attr('data-item');
+                bucket.push(item);
+            }, 'bucket-changed')
+
+            .AddHandler('remove-item', function(event, elm) {
+                var item_index = $(elm).attr('data-item-index');
+                bucket.splice(item_index, 1);
+            }, 'bucket-changed')
+
+            .AddObserver('bucket-changed', 'bucket', function(event, elm) {
+                $list = $(elm).children('ul');
+                $list.empty();
+                for (var i = 0; i < bucket.length; ++i)
+                    $list.append('<li data-handler="remove-item" data-item-index="'+i+'">'+bucket[i]+'</li>');
+            });
+        </script>
+    </body>
+</html>
