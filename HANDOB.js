@@ -74,10 +74,6 @@ HANDOB.bindObserverEvent = function(event_name) {
         args.shift();
         HANDOB.observerEvent(event, args);
     });
-
-    window.setTimeout(function() {
-        $(document).trigger('domready');
-    }, 800);
 };
 
 /**
