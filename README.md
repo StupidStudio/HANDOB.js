@@ -19,6 +19,8 @@ Or simply download or clone the repository and grab the [HANDOB.js](https://gith
 
 HANDOB.js requires jQuery 1.7 or later.
 
+If you install HANDOB.js via bower it will take care of the dependencies too.
+
 ## Usage
 
 This example enables two buttons to write text into a div.
